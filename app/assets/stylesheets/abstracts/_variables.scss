@@ -2,8 +2,19 @@
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
 
+// Primary Colors
+$cherry-coke: #C5175C;
+$light-purple: #CE2F53;
+$bright-pink: #F5234D;
+$dark-purple: #8B3045;
 
+//Secundary colors
+$bruin:#3D1A22;
+$groen:#2DD677;
+$grijs:#6A6064;
+$lichtzwart:#463A3D;
 
+//Tertiary colors
 
 
 /// Regular font family
@@ -13,10 +24,6 @@ $text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvet
 /// Code (monospace) font family
 /// @type List
 $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
-
-
-
-
 
 /// Copy text color
 /// @type Color
@@ -39,16 +46,9 @@ $mid-grey: rgb(153, 153, 153) !default;
 $dark-grey: rgb(68, 68, 68) !default;
 
 
-
-
-
 /// Container's maximum width
 /// @type Length
 $max-width: 1180px !default;
-
-
-
-
 
 /// Breakpoints map
 /// @prop {String} keys - Keys are identifiers mapped to a given length
@@ -58,10 +58,6 @@ $breakpoints: (
   'medium': 768px,
   'large': 1024px,
 ) !default;
-
-
-
-
 
 
 /// Relative or absolute URL where all assets are served from
