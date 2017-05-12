@@ -1,4 +1,18 @@
-<div class="col-sm-3 col-lg-6 btn">
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<div class="container">
+  <div class="test">
+  <div class="login-box col-md-8 col-md-offset-2">
+    <div class="col-sm-4 login-welcome">
+      <span><h2>Laten we beginnen!</h2></span>
+    </div>
+    <div class="col-sm-8 login-form">
+      <form action="post">
+      <h2>Log in</h2>
+      <input type="text" placeholder="&#xf007;  Gebruikersnaam" style="font-family:Arial, FontAwesome" />
+      <input type="text" placeholder="&#xf023;  Wachtwoord" style="font-family:Arial, FontAwesome" />
+      <input type="submit" value="log in">
+      <%= link_to "Wachtwoord vergeten?", new_view_password_path, class:"pull-right" %>
+      </form>
+    </div>
+  </div>
+  </div>
 </div>
