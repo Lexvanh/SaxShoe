@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# SaxShoe
-TNW4
-=======
 # README
 
 This README would normally document whatever steps are necessary to get the
@@ -26,4 +22,3 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
->>>>>>> 0d2e1abc01b470b5b8b2cf44eb119521812b45eb
