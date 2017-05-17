@@ -2,12 +2,14 @@
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
 input[type=submit]{
-  background: $cherry-coke;
-  color: $text-white;
-  text-transform: uppercase;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 15px;
+	width: 180px;
+	height: 45px;		
+	background: $cherry-orange;
+	color: $text-white;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 100px;
+	padding: 10px 15px;
 }
 
 button{

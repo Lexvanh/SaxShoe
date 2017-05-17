@@ -5,9 +5,9 @@
 /**
  * Set up a decent box model on the root element
  */
-html {
+body {
   box-sizing: border-box;
-  background: url("/images/bg.jpg") no-repeat center center fixed;
+  background: no-repeat center center fixed;
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
@@ -35,4 +35,40 @@ a {
     color: $text-color;
     text-decoration: underline;
   }
+}
+
+h1{
+	font-family: poppins;
+	font-size: 55px;
+	line-height: 60px;
+	color: #ffffff;
+}
+
+h2{
+	font-family: Poppins;
+	font-size: 23px;
+	line-height: 30px;
+	color: #3b1a22;
+}
+
+h3{
+  font-family: Poppins;
+  font-size: 20px;
+  line-height: 25px;
+  color: #ffffff;
+}
+
+
+h4{
+	font-family: Poppins;
+	font-size: 16px;
+	line-height: 20px;
+	color: #3a1a22;
+}
+
+p{
+  font-family: Nunito;
+  font-size: 16px;
+  line-height: 20px;
+  color: #3c1a22;
 }

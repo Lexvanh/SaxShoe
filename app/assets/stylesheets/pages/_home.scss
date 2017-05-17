@@ -1,28 +1,36 @@
-// -----------------------------------------------------------------------------
-// This file contains styles that are specific to the home page.
-// -----------------------------------------------------------------------------
-.test{
-  height: 100vh;
-  display: flex;
-  align-items: center;
-.login-box{
-  min-height: 250px;
+.sidebar{
+  width: 150px;
+  height: 100%;
+  position: fixed;
+  background: $cherry-purple;
 
-  .login-welcome{
-    background: $cherry-coke;
-    min-height: inherit;
-    text-align: center;
-    display: flex;
-    justify-content: center; /* align horizontal */
-    align-items: center; /* align vertical */
-    h2{
-      color: $text-white;
+.img-circle-purple{
+    margin-top: 50px;
+    padding-top: 40px;
+    height: 180px;
+    width: 180px;
+    background: $cherry-purple;
+    border-radius: 100px;
+
+    .img-circle-pink{
+      padding: 5px 0 0 5px;
+      height: 100px;
+      width: 100px;
+      background: $cherry-orange;
+      border-radius: 100px;
+      margin: 0 auto;
+
+      img{
+        margin: 0 auto;
+      }
     }
   }
-  .login-form{
-    min-height: inherit;
-    background: lightgrey;
-    padding: 0 30px;
+
+  span{
+    img{
+      margin: 0 auto;
+    }
+    text-align: center;
+    color: $text-white;
   }
-}
 }

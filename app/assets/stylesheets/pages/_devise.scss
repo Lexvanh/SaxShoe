@@ -1,0 +1,60 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the devise pages.
+// -----------------------------------------------------------------------------
+.bg-container{
+	background-image: url("login_bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.test{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+.login-box{
+  height: 540px;
+
+  .login-welcome{
+    border-radius: 10px 0 0 10px;
+    background-image: url("login_top_img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;    
+    height: 100%;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+    h2{
+      color: $text-white;
+      font-size: 35px;
+    }
+  }
+  .login-form{
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+    padding-top: 15px !important;
+    min-height: inherit;
+    background: #eeebeb;
+    padding: 0 30px;
+    h2{
+      margin: 60px 0 40px 0; 
+      font-weight: 500;
+      color: #6f575c;
+    }
+    input[type="email"], input[type="password"]{
+      margin-top: 10px;
+    }
+    input[type="submit"]{
+      margin-top: 50px;
+    }
+    input[type="checkbox"]{
+      width: 15px;
+      height: 15px;
+    }
+    label{
+      font-weight: normal;
+    }
+  }
+}
+}

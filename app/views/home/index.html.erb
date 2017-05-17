@@ -1,18 +1,16 @@
-<div class="container">
-  <div class="test">
-  <div class="login-box col-md-8 col-md-offset-2">
-    <div class="col-sm-4 login-welcome">
-      <span><h2>Laten we beginnen!</h2></span>
-    </div>
-    <div class="col-sm-8 login-form">
-      <form action="post">
-      <h2>Log in</h2>
-      <input type="text" placeholder="&#xf007;  Gebruikersnaam" style="font-family:Arial, FontAwesome" />
-      <input type="text" placeholder="&#xf023;  Wachtwoord" style="font-family:Arial, FontAwesome" />
-      <input type="submit" value="log in">
-      <%= link_to "Wachtwoord vergeten?", new_view_password_path, class:"pull-right" %>
-      </form>
-    </div>
-  </div>
-  </div>
+<div class="sidebar pull-left">
+	<div class="img-circle-purple">
+		<div class="img-circle-pink">
+			<img src="http://placehold.it/90x90" class="img-circle">
+		</div>
+	</div>
+
+	<p>Welkom, Zorgvrager</p>
+
+	<span><%=image_tag("icons/notification.svg") %> Notificaties </span>
+	<span><%=image_tag("icons/notification.svg") %> Òefeningen </span>
+	<span><%=image_tag("icons/notification.svg") %> Zorgvragers </span>
+	<span><%=image_tag("icons/settings.svg") %> Instellingen </span>
 </div>
+
+  <%= link_to (raw('Uitloggen')), destroy_user_session_path, :method => :delete, class:"pull-right" %>
