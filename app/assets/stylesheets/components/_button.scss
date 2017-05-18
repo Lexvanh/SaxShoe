@@ -13,5 +13,9 @@ input[type=submit]{
 }
 
 button{
-
+	background: $white;
+	width: 140px;
+	height: 45px;
+	border-radius: 100px;
+	border: 2px solid $cherry-pink;
 }

@@ -13,4 +13,36 @@
 	<span><%=image_tag("icons/settings.svg") %> Instellingen </span>
 </div>
 
-  <%= link_to (raw('Uitloggen')), destroy_user_session_path, :method => :delete, class:"pull-right" %>
+<div class="content-container">  
+	
+	<div class="content-info">
+		<%= link_to (raw('Uitloggen')), destroy_user_session_path, :method => :delete, class:"pull-right" %>
+		<h4>< Ga terug</h4>
+		<h2>Je bent hier:</h2>
+		<h1>Notificaties</h1>
+		<h3>Notificaties van zorgvragers</h3>
+	</div>
+	<div class="content">
+		<div class="row headers">
+			<div class="col-sm-2"><h3>Datum</h3></div>
+			<div class="col-sm-4"><h3>Melding</h3></div>
+			<div class="col-sm-2"><h3>Zorgvrager</h3></div>
+			<div class="col-sm-2"></div>
+			<div class="col-sm-2"><h3>Afgehandeld?</h3></div>
+		</div>
+		<div class="row content-item">
+			<div class="col-sm-2"><p>11-11-11</p></div>
+			<div class="col-sm-4"><p>Laser Eye Surgery A Risk Analysis For My Daughter</p></div>
+			<div class="col-sm-2"><p>Karen Wiersma</p></div>
+			<div class="col-sm-2"><a href="#"><button>Bekijken</button></a></div>
+			<div class="col-sm-2"><input type="checkbox"></div>
+		</div>
+		<div class="row content-item">
+			<div class="col-sm-2"><p>11-11-11</p></div>
+			<div class="col-sm-4"><p>Laser Eye Surgery A Risk Analysis For My Daughter</p></div>
+			<div class="col-sm-2"><p>Karen Wiersma</p></div>
+			<div class="col-sm-2"><a href="#"><button>Bekijken</button></a></div>
+			<div class="col-sm-2"><input type="checkbox"></div>
+		</div>
+	</div>
+</div>

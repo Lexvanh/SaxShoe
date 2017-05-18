@@ -34,3 +34,34 @@
     color: $text-white;
   }
 }
+
+.content-container{
+  margin-left: 200px;
+  max-width: 1170px;
+  padding: 0 15px;
+  .content-info{
+    padding-top: 20px;
+
+    h1, h2, h3, h4{
+      color: #000;
+      margin: 0;
+    }
+    h4{
+      margin-bottom: 20px;
+    }
+  }
+  .content{
+    background: $white;
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: 0 6px 25px 0 rgba(0, 0, 0, 0.2);
+    h3{
+      color: $text-colour;
+    }
+    .content-item{
+      border-bottom: solid 1px $cherry-pink;
+      padding: 20px 0;
+    }
+  }
+
+}
