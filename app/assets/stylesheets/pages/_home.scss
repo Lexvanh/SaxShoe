@@ -26,6 +26,32 @@
     }
   }
 
+  p{
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    color: $text-white;
+  }
+
+  ul{
+    margin-top: 50px;
+    padding: 0;
+    text-align: center;
+
+    li{
+      list-style-type: none; 
+      margin-bottom: 10px;
+
+
+      a{
+        color: $text-white;
+          font-family: Poppins;
+          font-size: 16px;
+          font-weight: 600;
+      }
+    }
+  }
+
   span{
     img{
       margin: 0 auto;
