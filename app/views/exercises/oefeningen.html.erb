@@ -1,0 +1,33 @@
+<div class="sidebar pull-left">
+	<div class="img-circle-purple">
+		<div class="img-circle-pink">
+			<img src="http://placehold.it/90x90" class="img-circle">
+		</div>
+	</div>
+
+	<p>Welkom, Zorgvrager</p>
+	<ul>
+		<li> <%=image_tag("icons/notification.svg") %> <br/> <%=link_to("Notificaties", home_index_path)%> </li>
+		<li> <%=image_tag("icons/notification.svg") %> <br/> <%=link_to("Oefeningen", exercises_oefeningen_path)%> </li>
+		<li> <%=image_tag("icons/notification.svg") %> <br/> <%=link_to("Zorgvragers", patients_zorgvragers_path)%> </li>
+		<li> <%=image_tag("icons/settings.svg") %> <br/> <%=link_to("Instellingen", home_settings_path)%> </li>
+	</ul>
+</div>
+
+<%=image_tag("top-image.png", class: "top-page-image") %>
+
+<div class="content-container">  
+	
+	<div class="content-info">
+		<%= link_to (raw('Uitloggen')), destroy_user_session_path, :method => :delete, class:"pull-right" %>
+		<h4>< Ga terug</h4>
+		<h2>Je bent hier:</h2>
+		<h1>Oefeningen</h1>
+		<h3>Oefeningen van zorgvragers</h3>
+	</div>
+	<div class="content">
+		<div class="row headers">
+			
+		</div>
+	</div>
+</div>

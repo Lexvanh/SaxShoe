@@ -1,0 +1,45 @@
+.content-patients{
+	margin-top: 50px;
+	.patients-header{
+		padding: 50px;
+		background: $soft-grey;
+		border-radius: 5px 5px 0 0;
+		input[type="text"]{
+			width:60%;
+		}
+		ul{
+			margin-top: 15px;
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+
+			h2{
+				margin: 0;
+			}
+
+			li{
+				float: left;
+				padding-right: 50px;
+				  font-family: Poppins;
+  font-size: 15px;
+  color: #3d1a22;
+			}
+
+			li a {
+		    display: block;
+		    color: white;
+		    text-align: center;
+		    padding: 16px;
+		    text-decoration: none;
+
+			}
+		}
+	}
+	.patients-item{
+    background: $white;
+    padding: 50px;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 6px 25px 0 rgba(0, 0, 0, 0.2);
+  }
+}

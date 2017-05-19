@@ -42,6 +42,9 @@
       list-style-type: none; 
       margin-bottom: 10px;
 
+      img{
+        margin-bottom: 5px;
+      }
 
       a{
         color: $text-white;
@@ -61,15 +64,22 @@
   }
 }
 
+.top-page-image{
+  width: 100%;
+  margin-bottom: -1300px;
+  z-index: -1;
+  position: fixed;
+}
+
 .content-container{
   margin-left: 200px;
-  max-width: 1170px;
+  max-width: 1470px;
   padding: 0 15px;
   .content-info{
     padding-top: 20px;
 
     h1, h2, h3, h4{
-      color: #000;
+      color: $text-white;
       margin: 0;
     }
     h4{

@@ -8,11 +8,13 @@
 	<p>Welkom, Zorgvrager</p>
 	<ul>
 		<li> <%=image_tag("icons/notification.svg") %> <br/> <a href="#"> Notificaties </a></li>
-		<li> <%=image_tag("icons/notification.svg") %> <br/> <a href="#"> Oefeningen </a></li>
-		<li> <%=image_tag("icons/notification.svg") %> <br/> <a href="#"> Zorgvragers </a></li>
-		<li> <%=image_tag("icons/settings.svg") %> <br/> <a href="#"> Instellingen </a></li>
+		<li> <%=image_tag("icons/notification.svg") %> <br/> <%=link_to("Oefeningen", exercises_oefeningen_path)%> </li>
+		<li> <%=image_tag("icons/notification.svg") %> <br/> <%=link_to("Zorgvragers", patients_zorgvragers_path)%> </li>
+		<li> <%=image_tag("icons/settings.svg") %> <br/> <%=link_to("Instellingen", home_settings_path)%> </li>
 	</ul>
 </div>
+
+<%=image_tag("top-image.png", class: "top-page-image") %>
 
 <div class="content-container">  
 	
@@ -25,25 +27,25 @@
 	</div>
 	<div class="content">
 		<div class="row headers">
-			<div class="col-sm-2"><h3>Datum</h3></div>
-			<div class="col-sm-4"><h3>Melding</h3></div>
-			<div class="col-sm-2"><h3>Zorgvrager</h3></div>
-			<div class="col-sm-2"></div>
-			<div class="col-sm-2"><h3>Afgehandeld?</h3></div>
+			<div class="col-md-2"><h3>Datum</h3></div>
+			<div class="col-md-4"><h3>Melding</h3></div>
+			<div class="col-md-2"><h3>Zorgvrager</h3></div>
+			<div class="col-md-2"></div>
+			<div class="col-md-2"><h3>Afgehandeld?</h3></div>
 		</div>
 		<div class="row content-item">
-			<div class="col-sm-2"><p>11-11-11</p></div>
-			<div class="col-sm-4"><p>Laser Eye Surgery A Risk Analysis For My Daughter</p></div>
-			<div class="col-sm-2"><p>Karen Wiersma</p></div>
-			<div class="col-sm-2"><a href="#"><button>Bekijken</button></a></div>
-			<div class="col-sm-2"><input type="checkbox"></div>
+			<div class="col-md-2"><p>11-11-11</p></div>
+			<div class="col-md-4"><p>Laser Eye Surgery A Risk Analysis For My Daughter</p></div>
+			<div class="col-md-2"><p>Karen Wiersma</p></div>
+			<div class="col-md-2"><a href="#"><button>Bekijken</button></a></div>
+			<div class="col-md-2"><input type="checkbox"></div>
 		</div>
 		<div class="row content-item">
-			<div class="col-sm-2"><p>11-11-11</p></div>
-			<div class="col-sm-4"><p>Laser Eye Surgery A Risk Analysis For My Daughter</p></div>
-			<div class="col-sm-2"><p>Karen Wiersma</p></div>
-			<div class="col-sm-2"><a href="#"><button>Bekijken</button></a></div>
-			<div class="col-sm-2"><input type="checkbox"></div>
+			<div class="col-md-2"><p>11-11-11</p></div>
+			<div class="col-md-4"><p>Laser Eye Surgery A Risk Analysis For My Daughter</p></div>
+			<div class="col-md-2"><p>Karen Wiersma</p></div>
+			<div class="col-md-2"><a href="#"><button>Bekijken</button></a></div>
+			<div class="col-md-2"><input type="checkbox"></div>
 		</div>
 	</div>
 </div>

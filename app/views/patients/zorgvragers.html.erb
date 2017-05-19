@@ -1,0 +1,49 @@
+<div class="sidebar pull-left">
+	<div class="img-circle-purple">
+		<div class="img-circle-pink">
+			<img src="http://placehold.it/90x90" class="img-circle">
+		</div>
+	</div>
+
+	<p>Welkom, Zorgvrager</p>
+	<ul>
+		<li> <%=image_tag("icons/notification.svg") %> <br/> <%=link_to("Notificaties", home_index_path)%></li>
+		<li> <%=image_tag("icons/notification.svg") %> <br/> <%=link_to("Oefeningen", exercises_oefeningen_path)%> </li>
+		<li> <%=image_tag("icons/notification.svg") %> <br/> <%=link_to("Zorgvragers", patients_zorgvragers_path)%> </li>
+		<li> <%=image_tag("icons/settings.svg") %> <br/> <%=link_to("Instellingen", home_settings_path)%> </li>
+	</ul>
+</div>
+
+<%=image_tag("top-image.png", class: "top-page-image") %>
+
+<div class="content-container">  
+	
+	<div class="content-info">
+		<%= link_to (raw('Uitloggen')), destroy_user_session_path, :method => :delete, class:"pull-right" %>
+		<h4>< Ga terug</h4>
+		<h2>Je bent hier:</h2>
+		<h1>Zorgvragers</h1>
+		<h3>Overzicht van zorgvragers</h3>
+	</div>
+	<div class="content-patients">
+		<div class=" patients-header">
+			<input type="text">
+			<input type="submit" value="zoeken">
+			<button>Nieuwe toevoegen</button>
+			
+			<ul>
+				<li><h2>Sorteren op:</h2></li>
+				<a href="#"><li>A-Z</li></a>
+				<a href="#"><li>Soort blessure</li></a>
+				<a href="#"><li>Laatst gewijzigd</li></a>
+				<a href="#"><li>Voornaam</li></a>
+				<a href="#"><li>Achternaam</li></a>
+			</ul>
+
+		</div>
+		<div class=" patients-item">
+			<div class="col-sm-4"><h2>Naam Zorgvrager</h2></div>
+			<div class="col-sm-4"><h2>Soort blessure</h2></div>
+		</div>
+	</div>
+</div>
