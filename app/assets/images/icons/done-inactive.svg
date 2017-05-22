@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="55px" height="55px" viewBox="0 0 55 55" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>Float Copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="buttons" transform="translate(-389.000000, -375.000000)">
+            <g id="Float-Copy-2" transform="translate(424.500000, 402.500000) rotate(-180.000000) translate(-424.500000, -402.500000) translate(391.000000, 377.000000)">
+                <g id="Group" transform="translate(16.000000, 0.000000)">
+                    <circle id="Knob" stroke="#C1B5B8" stroke-width="2" cx="25.1887548" cy="25.1740643" r="26"></circle>
+                    <path d="M20.8541332,36.8484574 L40.8541753,16.0482037 C41.4661766,15.4105959 41.4469766,14.3977836 40.8093753,13.7857761 C40.1717739,13.1729686 39.1597718,13.1929689 38.5469705,13.8297767 L19.7765309,33.3516148 L12.1221148,24.3059044 C11.5509136,23.6306962 10.5421115,23.5466952 9.86691004,24.1179021 C9.19250862,24.6883091 9.10850844,25.6979214 9.67970964,26.3723296 L18.4789282,36.7732565 C18.7717288,37.1188607 19.1973297,37.3388634 19.6501307,37.3388634 C20.1349317,37.3388634 20.5517326,37.1620613 20.8541332,36.8484574 Z" id="05-path-copy" fill="#C1B5B8" transform="translate(25.300684, 25.338863) rotate(-181.000000) translate(-25.300684, -25.338863) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
