@@ -7,7 +7,7 @@
 
 	<p>Welkom, Zorgvrager</p>
 	<ul>
-		<li> <%=image_tag("icons/notification.svg") %> <br/> <a href="#"> Notificaties </a></li>
+		<li> <%=image_tag("icons/notification.svg") %> <br/> <%=link_to("Notificaties", home_index_path)%> </li>
 		<li> <%=image_tag("icons/Oefeningen.svg") %> <br/> <%=link_to("Oefeningen", exercises_oefeningen_path)%> </li>
 		<li> <%=image_tag("icons/avatar.svg") %> <br/> <%=link_to("Zorgvragers", patients_zorgvragers_path)%> </li>
 		<li> <%=image_tag("icons/settings.svg") %> <br/> <%=link_to("Instellingen", home_settings_path)%> </li>
