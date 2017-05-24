@@ -1,5 +1,6 @@
 .content-patients{
 	margin-top: 50px;
+	box-shadow: 0 6px 25px 0 rgba(0, 0, 0, 0.2);
 	.patients-header{
 		padding: 50px;
 		background: $soft-grey;
@@ -21,9 +22,9 @@
 			li{
 				float: left;
 				padding-right: 50px;
-				  font-family: Poppins;
-  font-size: 15px;
-  color: #3d1a22;
+				font-family: Poppins;
+			  font-size: 15px;
+			  color: #3d1a22;
 			}
 
 			li a {
@@ -39,7 +40,6 @@
 	.patients-item{
     background: $white;
     padding: 50px;
-    border-radius: 0 0 5px 5px;
-    box-shadow: 0 6px 25px 0 rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid $cherry-pink;
   }
 }
