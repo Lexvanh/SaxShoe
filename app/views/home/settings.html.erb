@@ -12,22 +12,42 @@
 		<h3>Instellingen van de applicatie</h3>
 	</div>
 	<div class="content-patients">
-		<div class=" patients-header">
-			<div class="img-circle-purple">
-				<div class="img-circle-pink">
-					<img src="http://placehold.it/90x90" class="img-circle">
+		<div class="settings-header">
+			<div class="col-sm-1">
+				<div class="img-circle-purple">
+					<div class="img-circle-pink">
+						<img src="http://placehold.it/90x90" class="img-circle">
+					</div>
 				</div>
 			</div>
 
-		</div>
+			<div class="col-sm-3">
+				<h3>Account van ZORGGEVER</h3>
+			</div>
 
-		<div class=" patients-item">
+			<div class="col-sm-1 pull-right" style="border-left: 2px solid grey">
+				<%= image_tag("icons/trash.svg")%> <br>
+				<%= image_tag("icons/edit.svg")%>
+			</div>
+
+			<div class="col-sm-3 pull-right">
+				<p>Gebruikersnaam: <br>
+				Wachtwoord: <br>
+				E-mailadres: </p>
+			</div>
+
+		</div>
+		<div class="patients-item">
+			<div class="col-sm-5"><h2>Overzicht zorggevers</h2></div>
+			<div class="col-sm-3 pull-right"> <%= button_to("Toevoegen", new_user_registration_path) %> </div>
+		</div>
+		<div class="patients-item">
 			<div class="col-sm-2"> <%= image_tag("icons/avatar.svg") %></div>
 			<div class="col-sm-4"><p>Willie Rode</p></div>
 			<div class="col-sm-4"><p>Enkel</p></div>
 			<div class="col-sm-2"> <%= image_tag("icons/cross.svg") %></div>
 		</div>
-		<div class=" patients-item">
+		<div class="patients-item">
 			<div class="col-sm-2"> <%= image_tag("icons/avatar.svg") %></div>
 			<div class="col-sm-4"><p>Willie Rode</p></div>
 			<div class="col-sm-4"><p>Enkel</p></div>

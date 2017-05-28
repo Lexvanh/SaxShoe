@@ -98,3 +98,52 @@
 }
 
 }
+
+.signup-form {
+  @extend .login-form;
+  background: white;
+  padding: 50px 100px;
+  border-radius: 5px;
+  margin-top: 50px;
+  box-shadow: 0 6px 25px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+
+  input{
+    border: 1px solid grey;
+    margin-top: 40px;
+    height: 50px;
+    padding-left: 50px;
+  }
+
+  .inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+
+  label{
+    height: 50px;
+    margin-top: 40px;
+    line-height: 50px;
+    width: 100%;
+    text-align: left;
+    padding-left: 50px;
+    background: $white;
+    border: 1px solid grey;
+    border-radius: 100px;
+  }
+
+  .inputfile + label {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: #8e888a;
+    display: inline-block;
+  }
+
+  .inputfile + label {
+    cursor: pointer; /* "hand" cursor */
+  }
+}
