@@ -6,11 +6,20 @@
 }
 
 .content-container{
-  margin-left: 200px;
+  margin: 0 auto;
+  padding-left: 190px;
+  padding-right: 35px;
   max-width: 1470px;
-  padding: 0 15px;
   .content-info{
     padding-top: 20px;
+    a{
+      font-family: Poppins;
+      font-size: 20px;
+      letter-spacing: 1.8px;
+      text-align: center;
+      color: #ffffff;
+      padding-left: 15px;
+    }
 
     h1, h2, h3, h4{
       color: $text-white;

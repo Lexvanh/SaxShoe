@@ -7,9 +7,32 @@
 
 	<p>Welkom, Zorgvrager</p>
 	<ul>
-		<li> <%=image_tag("icons/notification.svg") %> <br/> <%=link_to("Notificaties", home_index_path)%> </li>
-		<li> <%=image_tag("icons/Oefeningen.svg") %> <br/> <%=link_to("Oefeningen", exercises_oefeningen_path)%> </li>
-		<li> <%=image_tag("icons/avatar.svg") %> <br/> <%=link_to("Zorgvragers", patients_zorgvragers_path)%> </li>
-		<li> <%=image_tag("icons/settings.svg") %> <br/> <%=link_to("Instellingen", home_settings_path)%> </li>
+		<% if params[:action] == "index" && params[:controller] == "home" %>
+			<li> <%=image_tag("icons/notification.svg") %> <br/> <%=link_to("Notificaties", home_index_path, class:"active")%> </li>
+		<% else %>
+			<li> <%=image_tag("icons/notification.svg") %> <br/> <%=link_to("Notificaties", home_index_path)%> </li>
+		<% end %>
+
+		<% if params[:action] == "oefeningen" && params[:controller] == "exercises" %>
+			<li> <%=image_tag("icons/Oefeningen.svg") %> <br/> <%=link_to("Oefeningen", exercises_oefeningen_path, class:"active")%> </li>
+		<% else %>
+			<li> <%=image_tag("icons/Oefeningen.svg") %> <br/> <%=link_to("Oefeningen", exercises_oefeningen_path)%> </li>
+		<% end %>
+
+		<% if params[:action] == "zorgvragers" && params[:controller] == "patients" %>
+			<li> <%=image_tag("icons/avatar.svg") %> <br/> <%=link_to("Zorgvragers", patients_zorgvragers_path, class:"active")%> </li>
+		<% else %>
+			<li> <%=image_tag("icons/avatar.svg") %> <br/> <%=link_to("Zorgvragers", patients_zorgvragers_path)%> </li>
+		<% end %>
+
+		<% if params[:action] == "settings" && params[:controller] == "home" %>
+			<li> <%=image_tag("icons/settings.svg") %> <br/> <%=link_to("Instellingen", home_settings_path, class:"active")%> </li>
+		<% else %>
+			<li> <%=image_tag("icons/settings.svg") %> <br/> <%=link_to("Instellingen", home_settings_path)%> </li>
+		<% end %>
+
+		
+		
+		
 	</ul>
 </div>

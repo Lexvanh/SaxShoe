@@ -5,8 +5,10 @@
 <div class="content-container">  
 	
 	<div class="content-info">
-		<%= link_to (raw('Uitloggen')), destroy_user_session_path, :method => :delete, class:"pull-right" %>
-		<h4>< Ga terug</h4>
+		<%= link_to image_tag("icons/logout.svg"), destroy_user_session_path, :method => :delete, class:"pull-right"%>
+		<%= link_to (raw('Uitloggen')), destroy_user_session_path, :method => :delete, class:"pull-right"%>
+
+		<h4> <%=image_tag("icons/previous.svg") %> Ga terug</h4>
 		<h2>Je bent hier:</h2>
 		<h1>Instellingen</h1>
 		<h3>Instellingen van de applicatie</h3>
@@ -37,21 +39,23 @@
 			</div>
 
 		</div>
-		<div class="patients-item">
-			<div class="col-sm-5"><h2>Overzicht zorggevers</h2></div>
-			<div class="col-sm-3 pull-right"> <%= button_to("Toevoegen", new_user_registration_path) %> </div>
-		</div>
-		<div class="patients-item">
-			<div class="col-sm-2"> <%= image_tag("icons/avatar.svg") %></div>
-			<div class="col-sm-4"><p>Willie Rode</p></div>
-			<div class="col-sm-4"><p>Enkel</p></div>
-			<div class="col-sm-2"> <%= image_tag("icons/cross.svg") %></div>
-		</div>
-		<div class="patients-item">
-			<div class="col-sm-2"> <%= image_tag("icons/avatar.svg") %></div>
-			<div class="col-sm-4"><p>Willie Rode</p></div>
-			<div class="col-sm-4"><p>Enkel</p></div>
-			<div class="col-sm-2"> <%= image_tag("icons/cross.svg") %></div>
+		<div class="patient-items">
+			<div class="patients-item">
+				<div class="col-sm-5"><h2>Overzicht zorggevers</h2></div>
+				<div class="col-sm-3 pull-right"> <%= button_to("Toevoegen", new_user_registration_path) %> </div>
+			</div>
+			<div class="patients-item">
+				<div class="col-sm-2"> <%= image_tag("icons/avatar.svg") %></div>
+				<div class="col-sm-4"><p>Willie Rode</p></div>
+				<div class="col-sm-4"><p>Enkel</p></div>
+				<div class="col-sm-2"> <%= image_tag("icons/cross.svg") %></div>
+			</div>
+			<div class="patients-item">
+				<div class="col-sm-2"> <%= image_tag("icons/avatar.svg") %></div>
+				<div class="col-sm-4"><p>Willie Rode</p></div>
+				<div class="col-sm-4"><p>Enkel</p></div>
+				<div class="col-sm-2"> <%= image_tag("icons/cross.svg") %></div>
+			</div>
 		</div>
 	</div>
 </div>

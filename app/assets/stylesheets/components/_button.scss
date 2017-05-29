@@ -13,13 +13,32 @@ input[type=submit]{
 }
 
 button{
-	background: $white;
-	width: 140px;
-	height: 45px;
+	width: 180px;
+	height: 50px;
 	border-radius: 100px;
-	border: 2px solid $cherry-pink;
+	box-shadow: none;
+
+	img{
+		width: 25px;
+	}
 }
 
-.button-pink{
+.button-soft{
+	@extend button;
+	background: $cherry-orange;
+	color: $text-white;
+}
+
+.button-bright{
+	@extend button;
+	color: $text-white;
 	background-image: linear-gradient(to top, #c5175c, #ce2f53) !important;
+	border: none;
+}
+
+.button-white{
+	@extend button;
+	background: $white;
+	color: $cherry-pink;
+	border: 2px solid $cherry-pink;
 }

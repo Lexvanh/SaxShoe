@@ -5,15 +5,46 @@
 <div class="content-container">  
 	
 	<div class="content-info">
-		<%= link_to (raw('Uitloggen')), destroy_user_session_path, :method => :delete, class:"pull-right" %>
-		<h4>< Ga terug</h4>
+		<%= link_to image_tag("icons/logout.svg"), destroy_user_session_path, :method => :delete, class:"pull-right"%>
+		<%= link_to (raw('Uitloggen')), destroy_user_session_path, :method => :delete, class:"pull-right"%>
+
+		<h4> <%=image_tag("icons/previous.svg") %> Ga terug</h4>
 		<h2>Je bent hier:</h2>
 		<h1>Oefeningen</h1>
 		<h3>Oefeningen van zorgvragers</h3>
 	</div>
-	<div class="content">
-		<div class="row headers">
+	<div class="content-patients">
+		<div class=" patients-header">
+			<input type="text">
+			<input type="submit" value="zoeken">
+			<button class="pull-right button-bright">Nieuwe toevoegen <%= image_tag ("icons/Oefeningen.svg") %></button>
 			
+			<ul>
+				<li><h2>Sorteren op:</h2></li>
+				<a href="#"><li>A-Z</li></a>
+				<a href="#"><li>Soort blessure</li></a>
+				<a href="#"><li>Laatst gewijzigd</li></a>
+			</ul>
+		</div>
+		<div class="patient-items">
+			<div class=" patients-item" style="border-bottom: none;">
+				<div class="col-sm-6"><h2>Naam Oefening</h2></div>
+				<div class="col-sm-6"><h2>Soort Oefening</h2></div>
+			</div>
+
+			<div class="patients-item">
+				<div class="col-sm-1"><%= image_tag ("icons/Oefeningen-roze.svg") %></div>
+				<div class="col-sm-5"><p>Squats</p></div>
+				<div class="col-sm-3"><p>Billen,benen,core</p></div>
+				<div class="col-sm-3"><button class="button-white pull-right">Bekijken</button></div>
+			</div>
+
+			<div class="patients-item">
+				<div class="col-sm-1"><%= image_tag ("icons/Oefeningen-roze.svg") %></div>
+				<div class="col-sm-5"><p>Legpress</p></div>
+				<div class="col-sm-3"><p>Bovenbeen,core,knie</p></div>
+				<div class="col-sm-3"><button class="button-white pull-right">Bekijken</button></div>
+			</div>
 		</div>
 	</div>
 </div>
