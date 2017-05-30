@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   get 'patients/zorgvragers'
 
   get 'exercises/oefeningen'
+  get 'exercises/show'
+  get 'exercises/new'
 
   devise_for :users
   devise_for :u_sers

@@ -17,7 +17,8 @@
 		<div class=" patients-header">
 			<input type="text">
 			<input type="submit" value="zoeken">
-			<button class="pull-right button-bright">Nieuwe toevoegen <%= image_tag ("icons/Oefeningen.svg") %></button>
+			<%= link_to("Toevoegen", exercises_new_path) %>
+			<!-- <button class="pull-right button-bright">Nieuwe toevoegen <%= image_tag ("icons/Oefeningen.svg") %></button> -->
 			
 			<ul>
 				<li><h2>Sorteren op:</h2></li>
@@ -36,7 +37,7 @@
 				<div class="col-sm-1"><%= image_tag ("icons/Oefeningen-roze.svg") %></div>
 				<div class="col-sm-5"><p>Squats</p></div>
 				<div class="col-sm-3"><p>Billen,benen,core</p></div>
-				<div class="col-sm-3"><button class="button-white pull-right">Bekijken</button></div>
+				<div class="col-sm-3"> <%= link_to "Bekijken", exercises_show_path, class:"button-white pull-right" %> </div>
 			</div>
 
 			<div class="patients-item">

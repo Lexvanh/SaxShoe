@@ -1,0 +1,57 @@
+<%= render 'home/sidebar' %>
+
+<%=image_tag("top-image.png", class: "top-page-image") %>
+
+<div class="content-container">  
+	
+	<div class="content-info">
+		<%= link_to image_tag("icons/logout.svg"), destroy_user_session_path, :method => :delete, class:"pull-right"%>
+		<%= link_to (raw('Uitloggen')), destroy_user_session_path, :method => :delete, class:"pull-right"%>
+
+		<h4> <%= link_to image_tag("icons/previous.svg"), :back %> <%=link_to 'Ga terug', :back %> </h4>
+
+		<h2>Je bent hier:</h2>
+		<h1>Oefeningen</h1>
+		<h3>Bekijken van uitgelichte oefening</h3>
+	</div>
+	<div class="content-patients">
+		<div class="settings-header">
+			<div class="col-sm-4 col-md-2">
+				<div class="img-circle-outer">
+					<div class="img-circle-inner">
+						<img src="http://placehold.it/120x120" class="img-circle">
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-4">
+				<h3>Air Squats</h3>
+				<p>Benen, billen,knie</p>
+			</div>
+
+			<div class="col-sm-1 pull-right icons" style="border-left: 2px solid grey">
+				<div class="row"> <%= image_tag("icons/trash.svg", class:"pull-right")%> </div>
+				<div class="row" style="margin-top: 15px;"> <%= image_tag("icons/edit.svg", class:"pull-right")%> </div>
+			</div>
+
+		</div>
+		<div class="exercise-content row">
+			<div class="col-sm-6 description">
+				<h3>Air Squats</h3>
+				<p>Met de squat train je voornamelijk het onderlichaam en de core maar de oefening staat bekend om het trainen van de benen. Bij jouw revalidatie draagt deze oefening bij aan je drukverdeling en knieën.</p>
+				<h3>Stappenplan</h3>
+				<p>1. Je plaatst een bureaustoel waar je voor gaat staan. Zorg ervoor dat dit een stoel is waar geen wielen onder zitten zodat deze niet kan bewegen en kan gaan rollen </p>
+				<p>2. Ga zitten op de bureaustoel. Plaats je voeten al op de grond iets breder dan heupbreedte met de tenen naar buiten</p>
+				<p>3. Ga staan uit de bureaustoel en zak vervolgens weer tot net boven het zitvlak van de stoel</p>
+				<p>4. Vervolgens ga je weer omhoog zonder dat je voorover leunt. De billen duw je naar achteren en de rug houd je recht</p>
+				<p>5. Doe dit 15 tot 20 keer zodat je een goed gevoel kunt krijgen bij de oefening. Het is niet de bedoeling dat je plaats gaat nemen op de bureaustoel, maar dat je deze net raakt</p>
+			</div>
+			<div class="col-sm-6 video">
+				<h3>Video van de oefening</h3>
+				<div class="video-container">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/eSslRCTRhJc" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
