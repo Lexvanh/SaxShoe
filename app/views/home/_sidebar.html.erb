@@ -8,9 +8,9 @@
 	<p>Welkom, Zorgvrager</p>
 	<ul>
 		<% if params[:action] == "index" && params[:controller] == "home" %>
-			<li> <%=image_tag("icons/notification.svg") %> <br/> <%=link_to("Notificaties", home_index_path, class:"active")%> </li>
+			<li> <%=image_tag("icons/notifications.svg") %> <br/> <%=link_to("Notificaties", home_index_path, class:"active")%> </li>
 		<% else %>
-			<li> <%=image_tag("icons/notification.svg") %> <br/> <%=link_to("Notificaties", home_index_path)%> </li>
+			<li> <%=image_tag("icons/notifications.svg") %> <br/> <%=link_to("Notificaties", home_index_path)%> </li>
 		<% end %>
 
 		<% if params[:controller] == "exercises" %>

@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   get 'exercises/show'
   get 'exercises/new'
 
+  get 'patients/show'
+
   devise_for :users
   devise_for :views
   get 'home/index'
