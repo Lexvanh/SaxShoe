@@ -42,7 +42,7 @@
 		<div class="patient-items">
 			<div class="patients-item">
 				<div class="col-sm-5"><h2>Overzicht zorggevers</h2></div>
-				<div class="col-sm-3 pull-right"> <%= button_to("Toevoegen", new_user_registration_path) %> </div>
+				<div class="col-sm-3 pull-right"> <%= button_to("Toevoegen", new_user_signed_in_path, method: :get) %> </div>
 			</div>
 			<div class="patients-item">
 				<div class="col-sm-2"> <%= image_tag("icons/avatar.svg") %></div>

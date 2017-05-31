@@ -13,7 +13,7 @@
 			<li> <%=image_tag("icons/notification.svg") %> <br/> <%=link_to("Notificaties", home_index_path)%> </li>
 		<% end %>
 
-		<% if params[:action] == "oefeningen" && params[:controller] == "exercises" %>
+		<% if params[:controller] == "exercises" %>
 			<li> <%=image_tag("icons/Oefeningen.svg") %> <br/> <%=link_to("Oefeningen", exercises_oefeningen_path, class:"active")%> </li>
 		<% else %>
 			<li> <%=image_tag("icons/Oefeningen.svg") %> <br/> <%=link_to("Oefeningen", exercises_oefeningen_path)%> </li>

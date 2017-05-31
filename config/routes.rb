@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'patients/zorgvragers/new' => 'users#register_new', as: :new_user_signed_in
+  post 'patients/zorgvragers' => 'users#create_new', as: :create_new_user_signed_in
   get 'patients/zorgvragers'
 
   get 'exercises/oefeningen'
@@ -6,7 +8,6 @@ Rails.application.routes.draw do
   get 'exercises/new'
 
   devise_for :users
-  devise_for :u_sers
   devise_for :views
   get 'home/index'
   get 'home/settings'

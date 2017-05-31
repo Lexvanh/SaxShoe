@@ -1,0 +1,52 @@
+<%= render 'home/sidebar' %>
+
+<%=image_tag("top-image.png", class: "top-page-image") %>
+
+<div class="content-container">  
+  
+  <div class="content-info">
+    <%= link_to (raw('Uitloggen')), destroy_user_session_path, :method => :delete, class:"pull-right" %>
+    <h4>< Ga terug</h4>
+    <h2>Je bent hier:</h2>
+    <h1>Instellingen</h1>
+    <h3>Nieuwe Zorggever toevoegen</h3>
+  </div>
+
+  <div class="content-signup">
+    <div class="col-sm-9 signup-form">
+      <h2>Nieuwe zorggever</h2>
+			<%= form_for @user, url: :create_new_user_signed_in do |user| %>
+
+        <div class="field">
+          <input type="text" placeholder="Voor- en achternaam">
+        </div>
+
+        <div class="field">
+          <input type="text" placeholder="Gebruikersnaam">
+        </div>
+
+        <div class="field">
+          <%= user.text_field :email, autofocus: true, placeholder:"E-mailadres" %>
+        </div>
+
+        <div class="field">
+          <%= user.password_field :password, autocomplete: "off", placeholder:"Wachtwoord (6 karakters minimaal)" %>
+        </div>
+
+        <div class="field">
+          <%= user.password_field :password_confirmation, autocomplete: "off", placeholder:"Wachtwoord bevestigen" %>
+        </div>
+
+        <div class="field">
+          <input type="file" name="file" id="file" class="inputfile" />
+          <label for="file">Upload een profiel foto</label>
+        </div>
+
+        <div class="actions pull-right">
+          <%= user.submit "Opslaan", class:"button-bright" %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+
+</div>
