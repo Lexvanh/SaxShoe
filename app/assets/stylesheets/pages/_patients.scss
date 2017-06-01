@@ -1,6 +1,8 @@
 .content-patients{
 	margin-top: 50px;
 	box-shadow: 0 6px 25px 0 rgba(0, 0, 0, 0.2);
+	background: $white;
+
 	.patients-header{
 		padding: 50px 100px;
 		background: $soft-grey;
@@ -55,5 +57,16 @@
 	    	padding: 8px;
 	    }
 	  }
+	}
+	.subnav{
+		height: 50px;
+		line-height: 50px;
+		border-radius: 100px;
+		background-color: #e2ccd1;
+		text-align: center;
+	}
+
+	.description{
+		padding: 50px;
 	}
 }

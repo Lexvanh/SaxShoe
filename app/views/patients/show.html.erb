@@ -1,1 +1,85 @@
-show.html.erb
+<%= render 'home/sidebar' %>
+
+<%=image_tag("top-image.png", class: "top-page-image") %>
+
+<div class="content-container">  
+	
+	<div class="content-info">
+		<%= link_to image_tag("icons/logout.svg"), destroy_user_session_path, :method => :delete, class:"pull-right"%>
+		<%= link_to (raw('Uitloggen')), destroy_user_session_path, :method => :delete, class:"pull-right"%>
+
+		<h4> <%= link_to image_tag("icons/previous.svg"), :back %> <%=link_to 'Ga terug', :back %> </h4>
+
+		<h2>Je bent hier:</h2>
+		<h1>Zorvragers</h1>
+		<h3>Profiel van [ZORGVRAGER]</h3>
+	</div>
+
+	<div class="content-patients">
+		<div class="settings-header">
+			<div class="col-sm-4 col-md-2">
+				<div class="img-circle-outer">
+					<div class="img-circle-inner">
+						<img src="http://placehold.it/120x120" class="img-circle">
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-3">
+				<h3>Profiel van [ZORGVRAGER]</h3>
+				<p>[BLESSURE]</p>
+			</div>
+
+			<div class="col-sm-1 pull-right icons" style="border-left: 2px solid grey">
+				<div class="row"> <%= image_tag("icons/delete-user.svg", class:"pull-right")%> </div>
+				<div class="row" style="margin-top: 15px;"> <%= image_tag("icons/edit.svg", class:"pull-right")%> </div>
+			</div>
+
+			<div class="col-sm-2 pull-right">
+				<p>Kokoslaan 33</p>
+				<p>Leeuwarden</p>
+				<p>34 jaar</p>
+				<p>rachelwaters@fitae.nl</p>
+				<p>+31 600000000</p>
+			</div>
+
+			<div class="col-sm-2 pull-right">
+				<p>Adres: </p>
+				<p>Woonplaats: </p>
+				<p>Leeftijd: </p>
+				<p>E-mailadres: </p>
+				<p>Telefoon: </p>
+			</div>
+
+		</div>
+		<div class="content-patients row" style="margin: 0 !important;">
+			<div class="col-sm-4">
+				<div class="subnav">
+					<a href="#">Notificaties</a>
+					<a href="#">Oefeningen</a>
+					<a href="#">Opnames</a>
+					<a href="#">Looppatronen</a>
+				</div>
+				<div class="subnav-content">
+					
+				</div>
+			</div>
+			<div class="col-sm-8 description">
+				<h2>melding</h2>
+				<p>Bij deze oefening kon zorgvrager Rachel Waters niet goed haar oefening uitvoeren. Hieronder zie je haar pijn bij de oefening op een schaal van 1 t/m 10. Je zorgvrager wil graag weten wat hij/zij met de oefening moet doen.</p>
+				<input type="range" value="0" min="0" max="10" step="1" list="tickmarks">
+				<datalist id=tickmarks>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+					<option value="7">7</option>
+				</datalist>
+				<textarea name="" id="" cols="30" rows="10"></textarea>
+				<input type="submit" value="Versturen">
+			</div>
+		</div>
+	</div>
+</div>

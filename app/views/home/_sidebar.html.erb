@@ -19,7 +19,7 @@
 			<li> <%=image_tag("icons/Oefeningen.svg") %> <br/> <%=link_to("Oefeningen", exercises_oefeningen_path)%> </li>
 		<% end %>
 
-		<% if params[:action] == "zorgvragers" && params[:controller] == "patients" %>
+		<% if params[:controller] == "patients" %>
 			<li> <%=image_tag("icons/avatar.svg") %> <br/> <%=link_to("Zorgvragers", patients_zorgvragers_path, class:"active")%> </li>
 		<% else %>
 			<li> <%=image_tag("icons/avatar.svg") %> <br/> <%=link_to("Zorgvragers", patients_zorgvragers_path)%> </li>

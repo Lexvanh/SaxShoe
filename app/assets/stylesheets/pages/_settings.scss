@@ -2,6 +2,9 @@
 	@extend .patients-header;
 	height: 140px;
 	padding: 20px 50px !important;
+	p{
+		margin: 0
+	}
 
 	.icons{
 		img{
