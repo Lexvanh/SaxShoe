@@ -1,22 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="55px" height="55px" viewBox="0 0 55 55" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="27px" height="20px" viewBox="0 0 27 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
-    <title>Float Copy 2</title>
+    <title>05-path copy</title>
     <desc>Created with Sketch.</desc>
-    <defs>
-        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
-            <stop stop-color="#C62463" offset="0%"></stop>
-            <stop stop-color="#D45F6C" offset="100%"></stop>
-        </linearGradient>
-    </defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="buttons" transform="translate(-456.000000, -375.000000)">
-            <g id="Float-Copy-2" transform="translate(491.500000, 402.500000) rotate(-180.000000) translate(-491.500000, -402.500000) translate(458.000000, 377.000000)">
-                <g id="Group-2" transform="translate(16.000000, 0.000000)">
-                    <circle id="Knob" stroke="url(#linearGradient-1)" stroke-width="2" cx="25.1887548" cy="25.1740643" r="26"></circle>
-                    <path d="M20.5532703,36.5089918 L40.5530019,15.7092709 C41.1649937,15.0716795 41.145794,14.0588931 40.5082025,13.4469013 C39.8706111,12.8341095 38.8586247,12.8541092 38.2458329,13.4909007 L19.4756847,33.0122387 L11.8213874,23.9667601 C11.2501951,23.2915692 10.2414086,23.2075703 9.56621769,23.7787626 C8.89182674,24.349155 8.80782787,25.3587414 9.3790202,26.0331324 L18.1781021,36.4337928 C18.4708982,36.7793882 18.8964925,36.9993853 19.3492864,36.9993853 C19.8340799,36.9993853 20.2508743,36.8225876 20.5532703,36.5089918 Z" id="05-path" fill="url(#linearGradient-1)" transform="translate(24.999752, 24.999693) rotate(-180.000000) translate(-24.999752, -24.999693) "></path>
-                </g>
-            </g>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="button-checked-inactive" transform="translate(-8.000000, -10.000000)" fill="#E2D9DE">
+            <path d="M17.6276759,29.5907262 L34.2940336,12.2577142 C34.8040241,11.7263907 34.7880244,10.8824064 34.2567009,10.3724158 C33.7253774,9.86175862 32.8820597,9.87842497 32.3714025,10.4090818 L16.7296926,26.6767802 L10.3511441,19.1389199 C9.87515297,18.5762637 9.03450189,18.506265 8.47184566,18.9822562 C7.90985608,19.4575807 7.83985738,20.2988984 8.31584855,20.860888 L15.6483793,29.5280607 C15.8923747,29.8160553 16.2470348,29.9993853 16.6243612,29.9993853 C17.0283537,29.9993853 17.3756806,29.8520547 17.6276759,29.5907262 Z" id="05-path-copy"></path>
         </g>
     </g>
 </svg>

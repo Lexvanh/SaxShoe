@@ -61,9 +61,18 @@
 	.subnav{
 		height: 50px;
 		line-height: 50px;
-		border-radius: 100px;
+		border-radius: 0 100px 100px 0;
 		background-color: #e2ccd1;
 		text-align: center;
+	}
+
+	.subnav-content{
+		border-radius: 5px;
+		border: solid 2px #e2ccd1;
+		padding: 15px;
+		margin: 15px;
+		min-height: 200px;
+		height: 100%;
 	}
 
 	.description{

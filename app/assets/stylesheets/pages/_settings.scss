@@ -16,3 +16,26 @@
 		}
 	}
 }
+
+.patients-item{
+
+  label{
+  height: 50px;
+  margin-top: 40px;
+  line-height: 50px;
+  width: 100%;
+  text-align: left;
+  padding-left: 50px;
+  background: $white;
+  border: 1px solid grey;
+  border-radius: 100px;
+	}
+}
+
+.signup{
+	padding-bottom: 200px !important;
+	border: none !important;
+	input[type="file"]{
+		display: none;
+	}
+}

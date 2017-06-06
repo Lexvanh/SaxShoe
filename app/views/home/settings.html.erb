@@ -39,11 +39,26 @@
 			</div>
 
 		</div>
+
 		<div class="patient-items">
-			<div class="patients-item">
-				<div class="col-sm-5"><h2>Overzicht zorggevers</h2></div>
-				<div class="col-sm-3 pull-right"> <%= button_to("Toevoegen", new_user_signed_in_path, method: :get) %> </div>
+			<div class="patients-item" style="border: none !important;">
+				<div class="col-sm-5"><h2>Overzicht zorggevers - zorggever toevoegen</h2></div>
+				<div class="col-sm-3 pull-right"> <%= button_to("Toevoegen", new_user_signed_in_path, class:"pull-right", method: :get) %> </div>
 			</div>
+
+			<div class="patients-item signup">
+				<div class="col-sm-2"> <%= image_tag("icons/avatar.svg") %></div>
+				<div class="col-sm-5"> 
+					<p>Voor- en achternaam <span class="pull-right">E-mailadres</span> </p>
+					<p>Gebruikersnaam <span class="pull-right">Wachtwoord</span></p>
+					<input type="file" name="file" id="file" class="inputfile" />
+          <label for="file">Upload een profiel foto</label>
+				</div>
+				<div class="col-sm-5">
+					<button class="button-bright pull-right">Opslaan</button>
+				</div>
+			</div>
+
 			<div class="patients-item">
 				<div class="col-sm-2"> <%= image_tag("icons/avatar.svg") %></div>
 				<div class="col-sm-4"><p>Willie Rode</p></div>

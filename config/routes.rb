@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get 'exercises/new'
 
   get 'patients/show'
+  get 'patients/new'
 
   devise_for :users
   devise_for :views
