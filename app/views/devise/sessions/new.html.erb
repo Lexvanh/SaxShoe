@@ -2,10 +2,10 @@
 <div class="container">
   <div class="test">
   <div class="login-box col-sm-8 col-sm-offset-2 col-xs-12">
-    <div class="col-sm-4 login-welcome">
+    <div class="col-xs-12 col-sm-4 login-welcome">
       <h2>"Laten we beginnen!"</h2>
     </div>
-    <div class="col-sm-8 login-form">
+    <div class="col-xs-12 col-sm-8 login-form">
 
       <h2>Account Login</h2>
       <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
@@ -20,13 +20,13 @@
             <div class="field">
               <% if devise_mapping.rememberable? -%>
                 <%= f.check_box :remember_me %>
-                <%= f.label :remember_me %>
+                <%= f.label :remember_me, "Blijf ingelogd" %>
               <% end -%>
               <%= link_to "Wachtwoord vergeten?", new_view_password_path, class:"pull-right" %>
             </div>
 
           <div class="actions">
-            <%= f.submit "Login" %>
+            <%= f.submit "Login", class:"button-bright" %>
           </div>
         <% end %>
     </div>
