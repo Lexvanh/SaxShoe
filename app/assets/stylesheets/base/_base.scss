@@ -37,38 +37,7 @@ a {
   }
 }
 
-h1{
-	font-family: poppins;
-	font-size: 55px;
-	line-height: 60px;
-	color: #ffffff;
-}
-
-h2{
-	font-family: Poppins;
-	font-size: 23px;
-	line-height: 30px;
-	color: #3b1a22;
-}
-
-h3{
-  font-family: Poppins;
-  font-size: 20px;
-  line-height: 25px;
-  color: #ffffff;
-}
-
-
-h4{
-	font-family: Poppins;
-	font-size: 16px;
-	line-height: 20px;
-	color: #3a1a22;
-}
-
-p{
-  font-family: Nunito;
-  font-size: 16px;
-  line-height: 20px;
-  color: $text-colour;
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
 }

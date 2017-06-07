@@ -1,0 +1,26 @@
+
+<div class="subnav">
+	<% if params[:action] == "show" && params[:controller] == "patients" %>
+		<%=link_to("Notificaties", patients_show_path, class:"active")%>
+	<% else %>
+		<%=link_to("Notificaties", patients_show_path)%> 
+	<% end %>
+
+	<% if params[:action] == "showexercises" && params[:controller] == "patients" %>
+		<%=link_to("Oefeningen", patients_showexercises_path, class:"active")%>
+	<% else %>
+		<%=link_to("Oefeningen", patients_showexercises_path)%> 
+	<% end %>
+
+	<% if params[:action] == "showrecordings" && params[:controller] == "patients" %>
+		<%=link_to("Opnames", patients_showrecordings_path, class:"active")%>
+	<% else %>
+		<%=link_to("Opnames", patients_showrecordings_path)%> 
+	<% end %>
+
+	<% if params[:action] == "showpatterns" && params[:controller] == "patients" %>
+		<%=link_to("Looppatronen", patients_showpatterns_path, class:"active")%>
+	<% else %>
+		<%=link_to("Looppatronen", patients_showpatterns_path)%> 
+	<% end %>
+</div>

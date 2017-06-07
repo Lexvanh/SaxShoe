@@ -8,6 +8,9 @@ Rails.application.routes.draw do
   get 'exercises/new'
 
   get 'patients/show'
+  get 'patients/showrecordings'
+  get 'patients/showexercises'
+  get 'patients/showpatterns'
   get 'patients/new'
 
   devise_for :users

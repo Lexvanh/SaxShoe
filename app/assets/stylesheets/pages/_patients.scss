@@ -63,19 +63,70 @@
 		line-height: 50px;
 		border-radius: 0 100px 100px 0;
 		background-color: #e2ccd1;
-		text-align: center;
+
+		a{
+			font-family: Poppins;
+		  font-size: 14px;
+		  font-weight: 500;
+		  color: #3d1a22;
+		  padding-left: 10px; 
+		}
+
+		.active{
+			font-weight: bold;
+			border-radius: 100px;
+	    background: #e2ccd1;
+	    padding: 0 10px 35px 10px;
+		}
 	}
 
 	.subnav-content{
 		border-radius: 5px;
 		border: solid 2px #e2ccd1;
-		padding: 15px;
-		margin: 15px;
+		padding: 15px 0;
+		margin: 30px 15px 15px 15px;
 		min-height: 200px;
 		height: 100%;
+
+		ul{
+			list-style-type: none;
+			padding: 0;
+
+			.active{
+				background: $soft-red;
+				
+				a{
+					color: $white;
+				}
+			}
+
+			li{
+				padding: 8px 0 8px 10px;
+				a{
+					font-family: Poppins;
+				  font-size: 16px;
+				  font-weight: 500;
+				  line-height: 1.56;
+				  color: #3d1a22;
+				  padding: 10px 0;
+				}				
+			}
+		}
+
+
 	}
 
 	.description{
 		padding: 50px;
+
+		.summary{
+			margin-bottom: 100px;
+
+			img{
+			margin-left: 50px;
+			}
+		}
+
+
 	}
 }
