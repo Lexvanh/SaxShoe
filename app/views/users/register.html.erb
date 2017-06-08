@@ -5,8 +5,8 @@
 <div class="content-container">  
   
   <div class="content-info">
-    <%= link_to (raw('Uitloggen')), destroy_user_session_path, :method => :delete, class:"pull-right" %>
-    <h4>< Ga terug</h4>
+    <%= render 'home/gobackandsignout' %>
+
     <h2>Je bent hier:</h2>
     <h1>Instellingen</h1>
     <h3>Nieuwe Zorggever toevoegen</h3>

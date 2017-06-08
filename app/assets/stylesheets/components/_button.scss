@@ -24,21 +24,38 @@ button{
 }
 
 .button-soft{
-	@extend button;
 	background: $cherry-orange;
 	color: $text-white;
 }
 
 .button-bright{
-	@extend button;
 	color: $text-white;
 	background-image: linear-gradient(to top, #c5175c, #ce2f53) !important;
 	border: none;
 }
 
 .button-white{
-	@extend button;
 	background: $white;
 	color: $cherry-pink;
 	border: 2px solid $cherry-pink;
+}
+
+.hvr-grow {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px transparent;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+	padding: 14px 53px;
+	border-radius: 100px;
+	text-align: center;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+	text-decoration: none;
 }

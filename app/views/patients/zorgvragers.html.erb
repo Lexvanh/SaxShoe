@@ -5,10 +5,8 @@
 <div class="content-container">  
 	
 	<div class="content-info">
-		<%= link_to image_tag("icons/logout.svg"), destroy_user_session_path, :method => :delete, class:"pull-right"%>
-		<%= link_to (raw('Uitloggen')), destroy_user_session_path, :method => :delete, class:"pull-right"%>
+		<%= render 'home/gobackandsignout' %>
 
-		<h4> <%=image_tag("icons/previous.svg") %> Ga terug</h4>
 		<h2>Je bent hier:</h2>
 		<h1>Zorgvragers</h1>
 		<h3>Overzicht van zorgvragers</h3>
@@ -48,7 +46,7 @@
 					test
 				</div>
 				<div class="col-sm-2">
-					<%= link_to("Bekijken", patients_show_path) %>
+					<%= link_to("Bekijken", patients_show_path, class:"hvr-grow") %>
 				</div>
 			</div>
 		</div>

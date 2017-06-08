@@ -5,10 +5,8 @@
 <div class="content-container">  
 	
 	<div class="content-info">
-		<%= link_to image_tag("icons/logout.svg"), destroy_user_session_path, :method => :delete, class:"pull-right"%>
-		<%= link_to (raw('Uitloggen')), destroy_user_session_path, :method => :delete, class:"pull-right"%>
+		<%= render 'home/gobackandsignout' %>
 
-		<h4> <%=image_tag("icons/previous.svg") %> Ga terug</h4>
 		<h2>Je bent hier:</h2>
 		<h1>Notificaties</h1>
 		<h3>Notificaties van zorgvragers</h3>
@@ -26,7 +24,7 @@
 			<div class="col-md-4"><p>Laser Eye Surgery A Risk Analysis For My Daughter</p></div>
 			<div class="col-md-2"><p>Karen Wiersma</p></div>
 			<div class="col-md-2">
-				<a href="#" class="hvr-grow">Bekijken</a>
+				<a href="#" class="hvr-grow button-white">Bekijken</a>
 			</div>
 			<div class="col-md-2" style="text-align: center;">
 				<label for="checkbox-1"></label>
@@ -38,7 +36,7 @@
 			<div class="col-md-4"><p>Laser Eye Surgery A Risk Analysis For My Daughter</p></div>
 			<div class="col-md-2"><p>Karen Wiersma</p></div>
 			<div class="col-md-2">
-				<a href="#" class="hvr-grow">Bekijken</a>
+				<a href="#" class="hvr-grow button-white">Bekijken</a>
 			</div>
 			<div class="col-md-2" style="text-align: center;">
 				<label for="checkbox-1"></label>

@@ -5,10 +5,7 @@
 <div class="content-container">  
 	
 	<div class="content-info">
-		<%= link_to image_tag("icons/logout.svg"), destroy_user_session_path, :method => :delete, class:"pull-right"%>
-		<%= link_to (raw('Uitloggen')), destroy_user_session_path, :method => :delete, class:"pull-right"%>
-
-		<h4> <%= link_to image_tag("icons/previous.svg"), :back %> <%=link_to 'Ga terug', :back %> </h4>
+	<%= render 'home/gobackandsignout' %>
 
 		<h2>Je bent hier:</h2>
 		<h1>Zorgvragers</h1>
